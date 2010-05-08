@@ -3211,6 +3211,9 @@ Raphael = (function () {
             };
         })(method);
     }
+    Set[proto][toString] = function() {
+    	return 'Rapha\xebl\u2019s Set';
+    };
     Set[proto].attr = function (name, value) {
         if (name && R.is(name, array) && R.is(name[0], "object")) {
             for (var j = 0, jj = name[length]; j < jj; j++) {
